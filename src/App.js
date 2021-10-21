@@ -6,47 +6,46 @@ import requests from "./requests";
 import Nav from "./Nav";
 
 function App() {
-  return ( <
-    div className = "app" > {
-      /* Navbar */ } <
-    Nav > < /Nav> {
-      /* Banner */ } <
-    Banner > < /Banner> <
-    Row title = "NETFLIX ORIGINALS"
+  return (
+    <div className = "app" > {
+      /* Navbar */ } <Nav > </Nav> {
+      /* Banner */ } 
+    <Banner> </Banner> 
+    <Row title = "NETFLIX ORIGINALS"
     fetchUrl = {
       requests.fetchNetflixOriginals
     }
     isLargeRow >
-    < /Row> <
+    </Row> <
     Row title = "Trending Now"
     fetchUrl = {
       requests.fetchTrending
-    } > < /Row> <
-    Row title = "Top Rated"
+    } > </Row> 
+    <Row title = "Top Rated"
     fetchUrl = {
       requests.fetchTopRated
-    } > < /Row> <
+    } > </Row> <
     Row title = "Action Movies"
     fetchUrl = {
       requests.fetchActionMovies
-    } > < /Row> <
-    Row title = "Comedy Movies"
+    } > </Row> 
+    <Row title = "Comedy Movies"
     fetchUrl = {
       requests.fetchComedyMovies
-    } > < /Row> <
-    Row title = "Romance Movies"
+    } > </Row> 
+    <Row title = "Romance Movies"
     fetchUrl = {
       requests.fetchRomanceMovies
-    } > < /Row> <
-    Row title = "Horror Movies"
+    }> </Row> 
+    <Row title = "Horror Movies"
     fetchUrl = {
       requests.fetchHorrorMovies
-    } > < /Row> <
-    Row title = "Trending Now"
+    } > </Row> 
+    <Row title = "Trending Now"
     fetchUrl = {
       requests.fetchTrending
-    } > < /Row> <
-    /div>
+    } > </Row> 
+    </div>
   );
 }
 
